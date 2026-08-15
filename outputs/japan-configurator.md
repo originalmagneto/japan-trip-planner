@@ -6,10 +6,12 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 
 | ID | Variant | Trasa | Cena | Stav | Link |
 |---|---|---|---:|---|---|
-| f1 | Viedeň → Tokio, najjednoduchší základ | VIE → TYO | neoverené | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-12) |
+| f1 | Viedeň → Tokio, najjednoduchší základ | VIE → TYO | 6538 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-10) |
 | f2 | Budapešť → Tokio, cenový lov | BUD → TYO | neoverené | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=BUD.TYO.2026-09-24*TYO.BUD.2026-10-12) |
 | f3 | Viedeň → Osaka, open-jaw výhoda | VIE → OSA | neoverené | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.OSA.2026-09-24*OSA.VIE.2026-10-12) |
 | f4 | Viedeň → Tokio / Osaka, open-jaw | VIE → TYO | neoverené | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en) |
+| f5 | Viedeň → Haneda, Scoot cez Singapur | VIE → HND | 6538 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-10) |
+| f6 | Viedeň → Narita, Scoot cez Singapur | VIE → NRT | 6955 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-10) |
 
 ## Lokácie a POI
 
