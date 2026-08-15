@@ -18,6 +18,8 @@ Komplexný, reprodukovateľný plánovač cesty do Japonska pre 5 osôb.
 - `docs/flight-options.md` — letecké varianty a odkazy na vyhľadávanie
 - `docs/budget.md` — rozpočet a scenáre
 - `docs/transport.md` — vlaky, rezervácie a JR Pass
+- `docs/day-by-day.md` — denný operačný plán, odhady dopravy a mapy
+- `docs/accommodation.md` — štvrte, kritériá a cielené booking odkazy
 - `data/raw/flight-observations.csv` — ručne alebo skriptom uložené cenové pozorovania
 - `data/raw/accommodation.csv` — kandidáti ubytovania
 - `src/flight_tracker.py` — validácia a vyhodnotenie pozorovaní
@@ -35,8 +37,11 @@ Tento repozitár zámerne neobsahuje vymyslené aktuálne ceny. Konkrétne ceny 
 cd /opt/data/japan-trip-planner
 python3 -m unittest discover -s tests -v
 python3 src/flight_tracker.py summary
-python3 src/build_report.py
+./.venv/bin/python src/build_html.py
+./.venv/bin/python src/build_pdf.py
 ```
+
+The generated deliverables are `outputs/japan-trip-planner.html` and `outputs/japan-trip-planner.pdf`. The local `.venv` contains ReportLab for PDF output.
 
 ## Sledovanie ceny
 

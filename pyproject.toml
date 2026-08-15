@@ -1,0 +1,8 @@
+[project]
+name = "japan-trip-planner"
+version = "0.1.0"
+description = "Reproducible Japan trip planner for five travellers"
+requires-python = ">=3.11"
+
+[tool.pyright]
+include = ["src", "tests"]
