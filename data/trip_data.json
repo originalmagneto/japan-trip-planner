@@ -1,0 +1,193 @@
+{
+  "trip": {
+    "travellers": 5,
+    "rooms": 2,
+    "carry_on_only": true,
+    "outbound_window": ["2026-09-24", "2026-09-26"],
+    "return_window": ["2026-10-10", "2026-10-14"],
+    "budget_per_person_eur": 1500,
+    "working_dates": {"outbound": "2026-09-24", "return": "2026-10-12"}
+  },
+  "flight_options": [
+    {
+      "id": "f1",
+      "label": "Viedeň → Tokio, najjednoduchší základ",
+      "origin": "VIE",
+      "arrival": "TYO",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1–2",
+      "airlines": "Výber podľa aktuálnej dostupnosti",
+      "price_total_eur": null,
+      "verified": false,
+      "price_note": "Live cena zatiaľ nebola overiteľná v tomto zdroji",
+      "search_url": "https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-12",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "prílet aj odlet Tokio; najľahšie plánovanie a jeden návratový presun"
+    },
+    {
+      "id": "f2",
+      "label": "Budapešť → Tokio, cenový lov",
+      "origin": "BUD",
+      "arrival": "TYO",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1–2",
+      "airlines": "Výber podľa aktuálnej dostupnosti",
+      "price_total_eur": null,
+      "verified": false,
+      "price_note": "Live cena zatiaľ nebola overiteľná v tomto zdroji",
+      "search_url": "https://www.google.com/travel/flights?hl=en#flt=BUD.TYO.2026-09-24*TYO.BUD.2026-10-12",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "rovnaký itinerár, ale treba pripočítať cestu na BUD"
+    },
+    {
+      "id": "f3",
+      "label": "Viedeň → Osaka, open-jaw výhoda",
+      "origin": "VIE",
+      "arrival": "OSA",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1–2",
+      "airlines": "Výber podľa aktuálnej dostupnosti",
+      "price_total_eur": null,
+      "verified": false,
+      "price_note": "Live cena zatiaľ nebola overiteľná v tomto zdroji",
+      "search_url": "https://www.google.com/travel/flights?hl=en#flt=VIE.OSA.2026-09-24*OSA.VIE.2026-10-12",
+      "arrival_city": "Osaka",
+      "departure_city": "Osaka",
+      "route_effect": "odporúčaný reverse itinerár Osaka → Kjóto → Tokio"
+    },
+    {
+      "id": "f4",
+      "label": "Viedeň → Tokio / Osaka, open-jaw",
+      "origin": "VIE",
+      "arrival": "TYO",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1–2",
+      "airlines": "Výber podľa aktuálnej dostupnosti",
+      "price_total_eur": null,
+      "verified": false,
+      "price_note": "Open-jaw treba vyhľadať ako multi-city",
+      "search_url": "https://www.google.com/travel/flights?hl=en",
+      "arrival_city": "Tokyo",
+      "departure_city": "Osaka",
+      "route_effect": "Tokio → Kanazawa → Kjóto → Osaka; bez návratu do Tokia"
+    }
+  ],
+  "locations": [
+    {
+      "id": "tokyo",
+      "name": "Tokio",
+      "nights": 4,
+      "best_for": ["prvý kontakt", "história", "mestská kultúra"],
+      "weather": {"period": "koniec septembra", "temperature_c": "20–27", "rain": "vyššia šanca prehánok a tajfúnov", "note": "klimatický odhad, nie konkrétna predpoveď", "source": "https://www.japan.travel/en/uk/plan/weather/"},
+      "map_url": "https://www.google.com/maps/search/Tokyo",
+      "stay_area": "Ueno alebo Asakusa",
+      "walkability": "stredná; metro je praktické",
+      "pois": [
+        {"name": "Senso-ji", "type": "chrám", "time_h": 1.5, "cost_eur": 0, "map": "https://www.google.com/maps/search/Senso-ji", "link": "https://www.gotokyo.org/en/spot/15/index.html", "tip": "ísť pred 08:00"},
+        {"name": "Tokyo National Museum", "type": "múzeum", "time_h": 3, "cost_eur": 5, "map": "https://www.google.com/maps/search/Tokyo+National+Museum", "link": "https://www.tnm.jp/?lang=en", "tip": "vyhradiť pol dňa"},
+        {"name": "Meiji Jingu", "type": "svätyňa", "time_h": 1.5, "cost_eur": 0, "map": "https://www.google.com/maps/search/Meiji+Jingu", "link": "https://www.meijijingu.or.jp/en/", "tip": "pokojné ráno"}
+      ],
+      "activities": [
+        {"name": "Asakusa food walk", "hours": 2, "cost_eur": 20, "link": "https://www.google.com/maps/search/Asakusa"},
+        {"name": "Nikko day trip", "hours": 9, "cost_eur": 45, "link": "https://www.japan.travel/en/destinations/kanto/tochigi/nikko/"},
+        {"name": "Kamakura day trip", "hours": 8, "cost_eur": 25, "link": "https://www.japan.travel/en/destinations/kanto/kanagawa/kamakura/"}
+      ]
+    },
+    {
+      "id": "kanazawa",
+      "name": "Kanazawa",
+      "nights": 2,
+      "best_for": ["samurajská história", "záhrady", "tradičné štvrte"],
+      "weather": {"period": "koniec septembra", "temperature_c": "18–25", "rain": "častejší dážď než Tokio", "note": "klimatický odhad, nie konkrétna predpoveď", "source": "https://www.japan.travel/en/destinations/hokuriku/ishikawa/kanazawa/"},
+      "map_url": "https://www.google.com/maps/search/Kanazawa",
+      "stay_area": "Kanazawa Station alebo Korinbo",
+      "walkability": "v centre vysoká; bus medzi štvrťami",
+      "pois": [
+        {"name": "Kenroku-en", "type": "záhrada", "time_h": 2, "cost_eur": 3, "map": "https://www.google.com/maps/search/Kenrokuen", "link": "https://www.japan.travel/en/uk/uk/spot/1231/", "tip": "kombinovať s hradom"},
+        {"name": "Nagamachi Samurai District", "type": "história", "time_h": 2, "cost_eur": 5, "map": "https://www.google.com/maps/search/Nagamachi+Samurai+District", "link": "https://www.japan.travel/en/destinations/hokuriku/ishikawa/kanazawa/", "tip": "pokojná pešia štvrť"},
+        {"name": "Higashi Chaya", "type": "gejša štvrť", "time_h": 2, "cost_eur": 0, "map": "https://www.google.com/maps/search/Higashi+Chaya+District", "link": "https://www.japan.travel/en/destinations/hokuriku/ishikawa/kanazawa/", "tip": "večerné svetlo"}
+      ],
+      "activities": [
+        {"name": "Omicho Market", "hours": 2, "cost_eur": 20, "link": "https://www.google.com/maps/search/Omicho+Market"},
+        {"name": "Tea-house experience", "hours": 1.5, "cost_eur": 25, "link": "https://www.google.com/maps/search/Higashi+Chaya+District"}
+      ]
+    },
+    {
+      "id": "kyoto",
+      "name": "Kjóto",
+      "nights": 5,
+      "best_for": ["chrámy", "japonské záhrady", "tradičné štvrte"],
+      "weather": {"period": "koniec septembra / začiatok októbra", "temperature_c": "19–28", "rain": "prehánky možné", "note": "klimatický odhad, nie konkrétna predpoveď", "source": "https://www.japan.travel/en/uk/plan/weather/"},
+      "map_url": "https://www.google.com/maps/search/Kyoto",
+      "stay_area": "Kyoto Station alebo Gojo",
+      "walkability": "vysoká podľa štvrte; autobusy môžu byť pomalé",
+      "pois": [
+        {"name": "Kiyomizu-dera", "type": "chrám", "time_h": 2, "cost_eur": 4, "map": "https://www.google.com/maps/search/Kiyomizu-dera", "link": "https://www.kiyomizudera.or.jp/en/", "tip": "prísť skoro"},
+        {"name": "Fushimi Inari", "type": "svätyňa", "time_h": 2.5, "cost_eur": 0, "map": "https://www.google.com/maps/search/Fushimi+Inari+Taisha", "link": "https://inari.jp/en/", "tip": "spodná časť je bez výstupu"},
+        {"name": "Kinkaku-ji", "type": "chrám", "time_h": 1.5, "cost_eur": 3, "map": "https://www.google.com/maps/search/Kinkaku-ji", "link": "https://www.shokoku-ji.jp/en/kinkakuji/", "tip": "kombinovať s Ryoan-ji"},
+        {"name": "Arashiyama", "type": "príroda", "time_h": 4, "cost_eur": 5, "map": "https://www.google.com/maps/search/Arashiyama", "link": "https://www.japan.travel/en/destinations/kansai/kyoto/", "tip": "ráno kvôli davom"}
+      ],
+      "activities": [
+        {"name": "Nara day trip", "hours": 8, "cost_eur": 20, "link": "https://www.japan.travel/en/destinations/kansai/nara/"},
+        {"name": "Tea ceremony", "hours": 1.5, "cost_eur": 35, "link": "https://www.google.com/maps/search/Kyoto+tea+ceremony"},
+        {"name": "Philosopher's Path", "hours": 3, "cost_eur": 5, "link": "https://www.google.com/maps/search/Philosopher's+Path+Kyoto"}
+      ]
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "nights": 3,
+      "best_for": ["jedlo", "hrad", "večerná atmosféra"],
+      "weather": {"period": "začiatok októbra", "temperature_c": "19–27", "rain": "prehánky možné", "note": "klimatický odhad, nie konkrétna predpoveď", "source": "https://www.japan.travel/en/uk/plan/weather/"},
+      "map_url": "https://www.google.com/maps/search/Osaka",
+      "stay_area": "Namba alebo Umeda",
+      "walkability": "stredná; Namba je príjemná pešo",
+      "pois": [
+        {"name": "Osaka Castle", "type": "hrad", "time_h": 2.5, "cost_eur": 5, "map": "https://www.google.com/maps/search/Osaka+Castle", "link": "https://www.osakacastle.net/english/", "tip": "park je dôležitejší než interiér"},
+        {"name": "Shitennoji", "type": "chrám", "time_h": 1.5, "cost_eur": 3, "map": "https://www.google.com/maps/search/Shitennoji", "link": "https://www.shitennoji.or.jp/english/", "tip": "jeden z najstarších chrámov"},
+        {"name": "Dotonbori", "type": "jedlo", "time_h": 2, "cost_eur": 25, "map": "https://www.google.com/maps/search/Dotonbori", "link": "https://www.japan.travel/en/destinations/kansai/osaka/", "tip": "ísť po zotmení"}
+      ],
+      "activities": [
+        {"name": "Himeji Castle day trip", "hours": 8, "cost_eur": 35, "link": "https://www.himejicastle.jp/en/"},
+        {"name": "Kobe half-day", "hours": 6, "cost_eur": 25, "link": "https://www.google.com/maps/search/Kobe"}
+      ]
+    },
+    {
+      "id": "okinawa",
+      "name": "Okinawa",
+      "nights": 2,
+      "best_for": ["pláže", "Ryukyu história", "oddych"],
+      "weather": {"period": "začiatok októbra", "temperature_c": "25–30", "rain": "tajfúnové riziko stále existuje", "note": "klimatický odhad, nie konkrétna predpoveď", "source": "https://www.japan.travel/en/destinations/okinawa/okinawa/"},
+      "map_url": "https://www.google.com/maps/search/Okinawa",
+      "stay_area": "Naha",
+      "walkability": "Naha stredná; mimo Naha treba auto alebo organizovaný výlet",
+      "pois": [
+        {"name": "Shuri Castle Park", "type": "Ryukyu história", "time_h": 2.5, "cost_eur": 5, "map": "https://www.google.com/maps/search/Shuri+Castle", "link": "https://oki-park.jp/shurijo/en/", "tip": "overiť rekonštrukciu"},
+        {"name": "Okinawa Prefectural Museum", "type": "múzeum", "time_h": 2, "cost_eur": 5, "map": "https://www.google.com/maps/search/Okinawa+Prefectural+Museum", "link": "https://okimu.jp/en/", "tip": "dobré pri daždi"}
+      ],
+      "activities": [
+        {"name": "Naha + Shuri", "hours": 6, "cost_eur": 20, "link": "https://www.google.com/maps/search/Naha+Okinawa"},
+        {"name": "Kerama islands", "hours": 10, "cost_eur": 80, "link": "https://www.google.com/maps/search/Kerama+Islands"}
+      ]
+    }
+  ],
+  "transfers": [
+    {"from": "Tokyo", "to": "Kanazawa", "mode": "Hokuriku Shinkansen", "duration": "cca 2 h 30 min", "cost_eur": "75–100", "buy": "https://www.jreast.co.jp/multi/en/", "map": "https://www.google.com/maps/dir/Tokyo+Station/Kanazawa+Station"},
+    {"from": "Kanazawa", "to": "Kyoto", "mode": "Limited Express + shinkansen", "duration": "cca 2 h 15–30 min", "cost_eur": "55–90", "buy": "https://www.westjr.co.jp/global/en/ticket/", "map": "https://www.google.com/maps/dir/Kanazawa+Station/Kyoto+Station"},
+    {"from": "Kyoto", "to": "Osaka", "mode": "JR / Hankyu / Keihan", "duration": "30–55 min", "cost_eur": "4–8", "buy": "https://www.westjr.co.jp/global/en/", "map": "https://www.google.com/maps/dir/Kyoto+Station/Osaka+Station"},
+    {"from": "Osaka", "to": "Himeji", "mode": "JR", "duration": "cca 1 h", "cost_eur": "20–45", "buy": "https://www.westjr.co.jp/global/en/ticket/", "map": "https://www.google.com/maps/dir/Osaka+Station/Himeji+Station"},
+    {"from": "Japan", "to": "Okinawa", "mode": "domestic flight", "duration": "cca 2 h 30 min", "cost_eur": "60–150 one-way", "buy": "https://www.google.com/travel/flights", "map": "https://www.google.com/maps/search/Naha+Airport"}
+  ],
+  "sources": [
+    {"title": "Japan National Tourism Organization", "url": "https://www.japan.travel/en/"},
+    {"title": "Japan Rail Pass official prices", "url": "https://japanrailpass.net/en/purchase/price/"},
+    {"title": "Tokyo official tourism", "url": "https://www.gotokyo.org/en/"},
+    {"title": "Kyoto official tourism", "url": "https://kyoto.travel/en"}
+  ]
+}

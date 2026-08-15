@@ -21,14 +21,15 @@ Komplexný, reprodukovateľný plánovač cesty do Japonska pre 5 osôb.
 - `docs/day-by-day.md` — denný operačný plán, odhady dopravy a mapy
 - `docs/accommodation.md` — štvrte, kritériá a cielené booking odkazy
 - `data/raw/flight-observations.csv` — ručne alebo skriptom uložené cenové pozorovania
-- `data/raw/accommodation.csv` — kandidáti ubytovania
+- `data/schema.md` — pravidlá pre zadávanie cien
+- `data/trip_data.json` — konfigurácia letov, lokácií, POI, aktivít, počasia a presunov
 - `src/flight_tracker.py` — validácia a vyhodnotenie pozorovaní
 - `src/build_report.py` — vytvorenie markdown reportu
 - `src/build_html.py` — jednoduchý HTML report
 - `src/build_pdf.py` — PDF report
 - `src/build_site.py` — rich interaktívna prezentácia s obrázkami, tabmi, mapami a kalkulačkou rozpočtu
-- `tests/` — testy dátových nástrojov
-- `outputs/japan-trip-interactive.html` — hlavná interaktívna prezentácia
+- `src/build_configurator.py` — hlavný výberový konfigurátor letu, lokácií a aktivít
+- `outputs/japan-configurator.html/.md/.pdf` — zdieľateľné výstupy konfigurátora
 - `outputs/` — generované reporty
 
 ## Dôležité
@@ -43,9 +44,10 @@ python3 -m unittest discover -s tests -v
 python3 src/flight_tracker.py summary
 ./.venv/bin/python src/build_html.py
 ./.venv/bin/python src/build_pdf.py
+./.venv/bin/python src/build_configurator.py
 ```
 
-The generated deliverables are `outputs/japan-trip-planner.html` and `outputs/japan-trip-planner.pdf`. The local `.venv` contains ReportLab for PDF output.
+Hlavný konfigurátor je `outputs/japan-configurator.html`. Z rovnakého dátového modelu vzniká aj `japan-configurator.md` a `japan-configurator.pdf`. Interaktívne dáta sú v `data/trip_data.json`.
 
 ## Sledovanie ceny
 
