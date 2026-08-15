@@ -24,7 +24,11 @@ Komplexný, reprodukovateľný plánovač cesty do Japonska pre 5 osôb.
 - `data/raw/accommodation.csv` — kandidáti ubytovania
 - `src/flight_tracker.py` — validácia a vyhodnotenie pozorovaní
 - `src/build_report.py` — vytvorenie markdown reportu
+- `src/build_html.py` — jednoduchý HTML report
+- `src/build_pdf.py` — PDF report
+- `src/build_site.py` — rich interaktívna prezentácia s obrázkami, tabmi, mapami a kalkulačkou rozpočtu
 - `tests/` — testy dátových nástrojov
+- `outputs/japan-trip-interactive.html` — hlavná interaktívna prezentácia
 - `outputs/` — generované reporty
 
 ## Dôležité
