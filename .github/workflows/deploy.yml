@@ -25,6 +25,7 @@ jobs:
       
       - name: Build all outputs
         run: |
+          export PYTHONPATH="${PYTHONPATH}:${PWD}"
           python src/build_configurator.py
           python src/build_optimizer.py
           python src/build_visual.py
