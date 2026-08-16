@@ -35,9 +35,14 @@ def build_optimizer() -> str:
         ret = datetime.fromisoformat(flight["return_date"])
         flight["nights"] = (ret - out).days
     
+    # Generate AI recommendations
+    from src.ai import add_recommendations_to_data
+    data = add_recommendations_to_data(data)
+    
     html = template.render(
         css=css,
         flights=data["flight_options"],
+        recommendations=data.get("ai_recommendations", {}),
         trip_data_json=json.dumps(data, ensure_ascii=False).replace("</script>", "<\\/script>"),
     )
     
