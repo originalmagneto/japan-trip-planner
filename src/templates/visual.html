@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Trip Planner — Interactive Visual Experience</title>
+    <style>{{ css }}</style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    {% if hero_image %}
+    <img src="{{ hero_image.url_regular }}" alt="{{ hero_image.alt }}" class="hero-bg">
+    {% endif %}
+    <div class="hero-content">
+        <h1>Tvoja cesta do Japonska</h1>
+        <p class="hero-tagline">Interaktívny plánovač s históriou, kultúrou a overenými cenami</p>
+    </div>
+</section>
+
+<!-- AI Recommendations -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🤖 AI Odporúčania</h2>
+            <p class="section-subtitle">Vybrali sme najlepšie lety podľa rôznych kritérií</p>
+        </div>
+        
+        <div class="recommendations-grid">
+            {% for rec_type, rec in recommendations.items() %}
+            <div class="rec-card" data-flight-id="{{ rec.flight_id }}" onclick="selectRecommendation('{{ rec.flight_id }}')">
+                <div class="rec-icon">
+                    {% if rec_type == 'best_value' %}🏆
+                    {% elif rec_type == 'cheapest' %}💰
+                    {% elif rec_type == 'fastest' %}⚡
+                    {% elif rec_type == 'most_flexible' %}🗺️
+                    {% elif rec_type == 'most_convenient' %}✨
+                    {% endif %}
+                </div>
+                <h3 class="rec-title">
+                    {% if rec_type == 'best_value' %}Najlepší pomer cena/výkon
+                    {% elif rec_type == 'cheapest' %}Najlacnejší
+                    {% elif rec_type == 'fastest' %}Najrýchlejší
+                    {% elif rec_type == 'most_flexible' %}Najflexibilnejší
+                    {% elif rec_type == 'most_convenient' %}Najpohodlnejší
+                    {% endif %}
+                </h3>
+                <p class="rec-reason">{{ rec.reason }}</p>
+                <p class="mt-4"><strong>Let {{ rec.flight_id }}</strong> — {{ rec.flight.departure_date }} až {{ rec.flight.return_date }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Flight Options -->
+<section class="section" style="background: var(--gray-50);">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">✈️ Letecké možnosti</h2>
+            <p class="section-subtitle">{{ flights|length }} overených a neoverených ponúk</p>
+        </div>
+        
+        <div id="flightsList">
+            {% for flight in flights[:5] %}
+            <div class="flight-card" data-flight-id="{{ flight.id }}">
+                <div class="flight-header">
+                    <h3>{{ flight.label }}</h3>
+                    <div class="flight-price">
+                        {% if flight.price_total_eur %}
+                        <span class="price-total">{{ "%.0f"|format(flight.price_total_eur) }} €</span>
+                        <span class="price-per">{{ "%.0f"|format(flight.price_total_eur / 5) }} € / osoba</span>
+                        {% else %}
+                        <span class="price-total">Cena neuvedená</span>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="flight-meta">
+                    <span>📅 {{ flight.departure_date }} — {{ flight.return_date }}</span>
+                    <span>🔄 {{ flight.stops }}</span>
+                    {% if flight.verified %}
+                    <span class="badge-verified">✓ Overené</span>
+                    {% else %}
+                    <span class="badge-unverified">⚠ Overiť pri checkout</span>
+                    {% endif %}
+                </div>
+                <a href="{{ flight.search_url }}" target="_blank" class="btn btn-secondary">Otvoriť ponuku</a>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-4">
+            <button class="btn" onclick="showAllFlights()">Zobraziť všetkých {{ flights|length }} letov</button>
+        </div>
+    </div>
+</section>
+
+<!-- Locations with Rich Stories -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🗾 Destinácie</h2>
+            <p class="section-subtitle">Objavuj históriu, kultúru a skryté klenoty každého mesta</p>
+        </div>
+        
+        <div class="locations-grid">
+            {% for location in locations %}
+            <article class="location-card">
+                {% if location.hero_image %}
+                <div class="location-hero">
+                    <img src="{{ location.hero_image.url_regular }}" alt="{{ location.name }}">
+                    <div class="location-badge">{{ location.nights }} nocí</div>
+                </div>
+                {% endif %}
+                
+                <div class="location-content">
+                    <h3 class="location-title">{{ location.name }}</h3>
+                    <p class="location-tagline">{{ location.story.tagline }}</p>
+                    <p class="location-story">{{ location.story.history[:200] }}...</p>
+                    
+                    <!-- Fun Facts -->
+                    <div class="expandable">
+                        <button class="expand-toggle" onclick="toggleExpand(this)">
+                            <span>📖 Zaujímavosti</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expand-content">
+                            <ul class="fun-facts">
+                                {% for fact in location.story.fun_facts %}
+                                <li>{{ fact }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Cultural Tips -->
+                    <div class="expandable">
+                        <button class="expand-toggle" onclick="toggleExpand(this)">
+                            <span>💡 Kultúrne tipy</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expand-content">
+                            <ul class="fun-facts">
+                                {% for tip in location.story.cultural_tips %}
+                                <li>{{ tip }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- POIs -->
+                    <div class="expandable">
+                        <button class="expand-toggle" onclick="toggleExpand(this)">
+                            <span>🏯 Miesta na navštívenie ({{ location.pois|length }})</span>
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="expand-content">
+                            <div class="pois-grid">
+                                {% for poi in location.pois %}
+                                <div class="poi-card" onclick="window.open('{{ poi.link }}', '_blank')">
+                                    {% if poi.image %}
+                                    <img src="{{ poi.image.url_small }}" alt="{{ poi.name }}" class="poi-image">
+                                    {% endif %}
+                                    <div class="poi-content">
+                                        <div class="poi-name">{{ poi.name }}</div>
+                                        <div class="poi-meta">⏱️ {{ poi.time_h }}h · {{ poi.cost_eur }}€</div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="background: var(--gray-900); color: var(--white); padding: var(--space-6) 0; text-align: center;">
+    <div class="container">
+        <p>Vygenerované {{ generation_time }} · Data overené manuálne · Ceny sú orientačné</p>
+        {% if hero_image %}
+        <p style="font-size: 0.85rem; margin-top: var(--space-2); opacity: 0.7;">
+            Hero photo by <a href="{{ hero_image.photographer_url }}" target="_blank" style="color: var(--gold);">{{ hero_image.photographer }}</a> on Unsplash
+        </p>
+        {% endif %}
+    </div>
+</footer>
+
+<script>
+const tripData = {{ trip_data_json|safe }};
+
+function toggleExpand(button) {
+    const content = button.nextElementSibling;
+    const arrow = button.querySelector('.arrow');
+    content.classList.toggle('open');
+    arrow.textContent = content.classList.contains('open') ? '▲' : '▼';
+}
+
+function selectRecommendation(flightId) {
+    // Remove previous selection
+    document.querySelectorAll('.rec-card').forEach(card => card.classList.remove('selected'));
+    
+    // Add selection
+    event.currentTarget.classList.add('selected');
+    
+    // Scroll to flights
+    document.querySelector('#flightsList').scrollIntoView({ behavior: 'smooth' });
+    
+    // TODO: Highlight the selected flight in the list
+    console.log('Selected flight:', flightId);
+}
+
+function showAllFlights() {
+    // TODO: Expand flight list
+    alert('Zobrazujem všetky lety...');
+}
+</script>
+
+</body>
+</html>
