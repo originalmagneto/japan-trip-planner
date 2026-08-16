@@ -1,0 +1,257 @@
+{
+  "f1": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f2": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f3": {
+    "route": [
+      "Osaka",
+      "Kyoto",
+      "Kanazawa",
+      "Tokyo"
+    ],
+    "nights": {
+      "Osaka": 6,
+      "Kyoto": 5,
+      "Kanazawa": 2,
+      "Tokyo": 5
+    },
+    "total_nights": 18,
+    "arrival_city": "Osaka",
+    "departure_city": "Osaka"
+  },
+  "f4": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Osaka"
+  },
+  "f5": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 7,
+      "Kanazawa": 2,
+      "Kyoto": 4,
+      "Osaka": 3
+    },
+    "total_nights": 16,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f6": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 7,
+      "Kanazawa": 2,
+      "Kyoto": 4,
+      "Osaka": 3
+    },
+    "total_nights": 16,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f7": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f8": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f9": {
+    "route": [
+      "Osaka",
+      "Kyoto",
+      "Kanazawa",
+      "Tokyo"
+    ],
+    "nights": {
+      "Osaka": 6,
+      "Kyoto": 5,
+      "Kanazawa": 2,
+      "Tokyo": 5
+    },
+    "total_nights": 18,
+    "arrival_city": "Osaka",
+    "departure_city": "Osaka"
+  },
+  "f10": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 8,
+      "Kanazawa": 2,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 18,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f11": {
+    "route": [
+      "Osaka",
+      "Kyoto",
+      "Kanazawa",
+      "Tokyo"
+    ],
+    "nights": {
+      "Osaka": 7,
+      "Kyoto": 5,
+      "Kanazawa": 2,
+      "Tokyo": 5
+    },
+    "total_nights": 19,
+    "arrival_city": "Osaka",
+    "departure_city": "Osaka"
+  },
+  "f12": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 9,
+      "Kanazawa": 3,
+      "Kyoto": 5,
+      "Osaka": 3
+    },
+    "total_nights": 20,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f13": {
+    "route": [
+      "Osaka",
+      "Kyoto",
+      "Kanazawa",
+      "Tokyo"
+    ],
+    "nights": {
+      "Osaka": 5,
+      "Kyoto": 5,
+      "Kanazawa": 2,
+      "Tokyo": 5
+    },
+    "total_nights": 17,
+    "arrival_city": "Osaka",
+    "departure_city": "Osaka"
+  },
+  "f14": {
+    "route": [
+      "Tokyo",
+      "Kanazawa",
+      "Kyoto",
+      "Osaka"
+    ],
+    "nights": {
+      "Tokyo": 6,
+      "Kanazawa": 2,
+      "Kyoto": 4,
+      "Osaka": 3
+    },
+    "total_nights": 15,
+    "arrival_city": "Tokyo",
+    "departure_city": "Tokyo"
+  },
+  "f15": {
+    "route": [
+      "Osaka",
+      "Kyoto",
+      "Kanazawa",
+      "Tokyo"
+    ],
+    "nights": {
+      "Osaka": 7,
+      "Kyoto": 5,
+      "Kanazawa": 2,
+      "Tokyo": 5
+    },
+    "total_nights": 19,
+    "arrival_city": "Osaka",
+    "departure_city": "Osaka"
+  }
+}

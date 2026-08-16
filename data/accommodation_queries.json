@@ -1,0 +1,692 @@
+{
+  "f1": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f2": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f3": [
+    {
+      "city": "Osaka",
+      "checkin": "2026-09-24",
+      "checkout": "2026-09-30",
+      "nights": 6,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-09-24&checkout=2026-09-30&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-09-24&checkOut=2026-09-30&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-09-24&checkout=2026-09-30&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-09-30",
+      "checkout": "2026-10-05",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-09-30&checkout=2026-10-05&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-09-30&checkOut=2026-10-05&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-09-30&checkout=2026-10-05&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-05",
+      "checkout": "2026-10-07",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-05&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-05&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-05&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Tokyo",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-12",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-10-07&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-10-07&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-10-07&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f4": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f5": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-01",
+      "nights": 7,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-01&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-01&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-01&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-01",
+      "checkout": "2026-10-03",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-01&checkout=2026-10-03&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-01&checkOut=2026-10-03&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-01&checkout=2026-10-03&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-03",
+      "checkout": "2026-10-07",
+      "nights": 4,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-03&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-03&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-03&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-10",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-07&checkout=2026-10-10&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-07&checkOut=2026-10-10&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-07&checkout=2026-10-10&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f6": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-01",
+      "nights": 7,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-01&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-01&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-01&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-01",
+      "checkout": "2026-10-03",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-01&checkout=2026-10-03&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-01&checkOut=2026-10-03&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-01&checkout=2026-10-03&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-03",
+      "checkout": "2026-10-07",
+      "nights": 4,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-03&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-03&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-03&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-10",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-07&checkout=2026-10-10&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-07&checkOut=2026-10-10&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-07&checkout=2026-10-10&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f7": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f8": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f9": [
+    {
+      "city": "Osaka",
+      "checkin": "2026-09-24",
+      "checkout": "2026-09-30",
+      "nights": 6,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-09-24&checkout=2026-09-30&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-09-24&checkOut=2026-09-30&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-09-24&checkout=2026-09-30&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-09-30",
+      "checkout": "2026-10-05",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-09-30&checkout=2026-10-05&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-09-30&checkOut=2026-10-05&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-09-30&checkout=2026-10-05&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-05",
+      "checkout": "2026-10-07",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-05&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-05&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-05&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Tokyo",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-12",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-10-07&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-10-07&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-10-07&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f10": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-02",
+      "nights": 8,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-04",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-02&checkout=2026-10-04&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-02&checkOut=2026-10-04&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-02&checkout=2026-10-04&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-04",
+      "checkout": "2026-10-09",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-04&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-04&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-04&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-12",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-09&checkout=2026-10-12&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-09&checkOut=2026-10-12&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-09&checkout=2026-10-12&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f11": [
+    {
+      "city": "Osaka",
+      "checkin": "2026-09-25",
+      "checkout": "2026-10-02",
+      "nights": 7,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-09-25&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-09-25&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-09-25&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-07",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-02&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-02&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-02&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-09",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-07&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-07&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-07&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Tokyo",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-14",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-10-09&checkout=2026-10-14&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-10-09&checkOut=2026-10-14&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-10-09&checkout=2026-10-14&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f12": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-24",
+      "checkout": "2026-10-03",
+      "nights": 9,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-24&checkout=2026-10-03&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-24&checkOut=2026-10-03&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-24&checkout=2026-10-03&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-03",
+      "checkout": "2026-10-06",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-03&checkout=2026-10-06&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-03&checkOut=2026-10-06&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-03&checkout=2026-10-06&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-06",
+      "checkout": "2026-10-11",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-06&checkout=2026-10-11&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-06&checkOut=2026-10-11&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-06&checkout=2026-10-11&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-11",
+      "checkout": "2026-10-14",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-11&checkout=2026-10-14&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-11&checkOut=2026-10-14&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-11&checkout=2026-10-14&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f13": [
+    {
+      "city": "Osaka",
+      "checkin": "2026-09-26",
+      "checkout": "2026-10-01",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-09-26&checkout=2026-10-01&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-09-26&checkOut=2026-10-01&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-09-26&checkout=2026-10-01&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-01",
+      "checkout": "2026-10-06",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-01&checkout=2026-10-06&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-01&checkOut=2026-10-06&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-01&checkout=2026-10-06&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-06",
+      "checkout": "2026-10-08",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-06&checkout=2026-10-08&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-06&checkOut=2026-10-08&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-06&checkout=2026-10-08&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Tokyo",
+      "checkin": "2026-10-08",
+      "checkout": "2026-10-13",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-10-08&checkout=2026-10-13&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-10-08&checkOut=2026-10-13&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-10-08&checkout=2026-10-13&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f14": [
+    {
+      "city": "Tokyo",
+      "checkin": "2026-09-25",
+      "checkout": "2026-10-01",
+      "nights": 6,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-09-25&checkout=2026-10-01&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-09-25&checkOut=2026-10-01&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-09-25&checkout=2026-10-01&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-01",
+      "checkout": "2026-10-03",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-01&checkout=2026-10-03&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-01&checkOut=2026-10-03&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-01&checkout=2026-10-03&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-03",
+      "checkout": "2026-10-07",
+      "nights": 4,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-03&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-03&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-03&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Osaka",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-10",
+      "nights": 3,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-10-07&checkout=2026-10-10&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-10-07&checkOut=2026-10-10&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-10-07&checkout=2026-10-10&group_adults=5&no_rooms=2"
+    }
+  ],
+  "f15": [
+    {
+      "city": "Osaka",
+      "checkin": "2026-09-25",
+      "checkout": "2026-10-02",
+      "nights": 7,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Osaka--Japan/homes?checkin=2026-09-25&checkout=2026-10-02&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Osaka&checkIn=2026-09-25&checkOut=2026-10-02&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Osaka%2C+Japan&checkin=2026-09-25&checkout=2026-10-02&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kyoto",
+      "checkin": "2026-10-02",
+      "checkout": "2026-10-07",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kyoto--Japan/homes?checkin=2026-10-02&checkout=2026-10-07&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kyoto&checkIn=2026-10-02&checkOut=2026-10-07&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kyoto%2C+Japan&checkin=2026-10-02&checkout=2026-10-07&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Kanazawa",
+      "checkin": "2026-10-07",
+      "checkout": "2026-10-09",
+      "nights": 2,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Kanazawa--Japan/homes?checkin=2026-10-07&checkout=2026-10-09&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Kanazawa&checkIn=2026-10-07&checkOut=2026-10-09&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Kanazawa%2C+Japan&checkin=2026-10-07&checkout=2026-10-09&group_adults=5&no_rooms=2"
+    },
+    {
+      "city": "Tokyo",
+      "checkin": "2026-10-09",
+      "checkout": "2026-10-14",
+      "nights": 5,
+      "adults": 5,
+      "rooms": 2,
+      "airbnb_url": "https://www.airbnb.com/s/Tokyo--Japan/homes?checkin=2026-10-09&checkout=2026-10-14&adults=5&children=0",
+      "agoda_url": "https://www.agoda.com/search?city=Tokyo&checkIn=2026-10-09&checkOut=2026-10-14&rooms=2&adults=5&cid=1844104",
+      "booking_url": "https://www.booking.com/searchresults.html?ss=Tokyo%2C+Japan&checkin=2026-10-09&checkout=2026-10-14&group_adults=5&no_rooms=2"
+    }
+  ]
+}
