@@ -18,6 +18,9 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 | f10 | Najlacnejší lead do Tokia, self-transfer | VIE → NRT | 4294 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
 | f11 | Korean Air cez Soul → Osaka | VIE → KIX | 5043 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20OSA%202026-09-25%20returning%202026-10-14&hl=en&gl=AT&curr=EUR) |
 | f12 | Scoot cez Singapur → Tokio Haneda | VIE → HND | 5238 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20TYO%202026-09-24%20returning%202026-10-14&hl=en&gl=AT&curr=EUR) |
+| f13 | Trip.com: Air China + Asiana cez Peking a Soul | VIE → KIX | 3839 € | overené | [otvoriť](https://www.at.kayak.com/flights/VIE-OSA/2026-09-26/2026-10-13/5adults?sort=bestflight_a&currency=EUR) |
+| f14 | Air China cez Peking — najlepší normálny Air China lead | VIE → HND | 4589 € | overené | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-25/2026-10-10/5adults?sort=bestflight_a&currency=EUR) |
+| f15 | Korean Air cez Soul — provider quote | VIE → KIX | 4777.99 € | overené | [otvoriť](https://www.at.kayak.com/flights/VIE-OSA/2026-09-25/2026-10-14/5adults?sort=bestflight_a&currency=EUR) |
 
 ### Presné segmenty dostupných leadov
 
@@ -50,6 +53,23 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 - 24 Sep 10:25 VIE → 26 Sep 01:05 HND; SIN 13:10; total 31:40
 - Return 14 Oct: exact segment details require opening the Google Flights result
 - Stav: Google Flights live result: total 5,238 € for 5 adults. Taxes and required fees included; optional and bag fees may apply. Return segments were not exposed in the captured card.
+
+**Trip.com: Air China + Asiana cez Peking a Soul — 3839 € spolu**
+- 26 Sep CA842 VIE T3 13:30 → 27 Sep PEK T3 04:50; 5:05 connection
+- 27 Sep CA137 PEK 09:55 → GMP 13:05; self-transfer GMP→ICN 7:35; OZ118 ICN T2 20:40 → KIX T1 22:30
+- 13 Oct OZ117 KIX T1 00:15 → ICN T2 02:15; self-transfer 13:15; CA132 ICN T1 15:30 → PKX 16:40
+- Airport change PKX→PEK 10:15; 14 Oct CA841 PEK T3 02:55 → VIE T3 06:50
+- Stav: Downstream Trip.com checkout: 768 €/person displayed, 3,839 € total. Multi-ticket package with self-transfers and airport changes; cabin bag and 1×23 kg checked bag shown.
+
+**Air China cez Peking — najlepší normálny Air China lead — 4589 € spolu**
+- 25 Sep VIE 13:30 → 26 Sep HND 12:25; PEK 3:15; total 15:55
+- 10 Oct HND 21:10 → 11 Oct VIE 06:50; PEK 2:50; total 16:40
+- Stav: KAYAK result: 918 €/person displayed, 4,589 € total. Ordinary Air China round trip, no self-transfer warning; one cabin bag and two checked bags marked included.
+
+**Korean Air cez Soul — provider quote — 4777.99 € spolu**
+- 25 Sep KE938 VIE 18:30 → ICN; KE725 ICN → 26 Sep KIX 17:05; ICN 2:35; total 15:35
+- 14 Oct KE738 KIX 02:15 → ICN; KE937 ICN → VIE 16:20; ICN 6:35; total 21:05
+- Stav: Downstream Gotogate quote: 955.60 €/person, 4,777.99 € total. Economy Saver; no self-transfer; one cabin bag and one checked bag marked included.
 
 
 ## Lokácie a POI
@@ -113,6 +133,21 @@ Počasie: 25–30 °C; tajfúnové riziko stále existuje — klimatický odhad,
 |---|---|---:|---:|---|
 | Shuri Castle Park | Ryukyu história | 2.5 h | 5 € | [mapa](https://www.google.com/maps/search/Shuri+Castle) · [info](https://oki-park.jp/shurijo/en/) |
 | Okinawa Prefectural Museum | múzeum | 2 h | 5 € | [mapa](https://www.google.com/maps/search/Okinawa+Prefectural+Museum) · [info](https://okimu.jp/en/) |
+
+
+## Overené a sledované ubytovanie
+
+| Mesto | Ubytovanie | Konfigurácia | Celkom | Stav | Link |
+|---|---|---|---:|---|---|
+| Tokyo | 3 min to Sensoji | Family 2BR w/kitchen & laundry | One boutique-hotel family suite; 2 bedrooms, 4 single beds, 1 private bath; capacity 5 | 665.78 € | overené | [otvoriť](https://www.airbnb.com/rooms/50332195?check_in=2026-09-24&check_out=2026-09-28&adults=5&currency=EUR) |
+| Tokyo | nestay apartment tokyo akihabara 4B | Entire apartment; 2 bedrooms, 4 beds, 1 private bath; capacity 8 | 634.54 € | overené | [otvoriť](https://www.airbnb.com/rooms/793309609744991954?check_in=2026-09-24&check_out=2026-09-28&adults=5&currency=EUR) |
+| Tokyo | Hitumugi Motoasakusa Hotel | Entire apartment; 6 beds, 1 private bath; bedroom count not exposed | 799.68 € | overené | [otvoriť](https://www.airbnb.com/rooms/1647569642563875258?check_in=2026-09-24&check_out=2026-09-28&adults=5&currency=EUR) |
+| Tokyo | Matsugatani | Entire apartment; 4 beds, 1.5 private baths; bedroom count not exposed | 617.85 € | overené | [otvoriť](https://www.airbnb.com/rooms/1623777458966329748?check_in=2026-09-24&check_out=2026-09-28&adults=5&currency=EUR) |
+| Kyoto | Miyako Hotel Kyoto Hachijo | Exactly 2 South Wing Twin Rooms; 2 single beds per room, 23 m²; capacity 6; elevator | 1394.58 € | overené | [otvoriť](https://www.agoda.com/en-gb/miyako-hotel-kyoto-hachijo/hotel/kyoto-jp.html?countryId=3&finalPriceView=2&adults=5&children=0&rooms=2&checkIn=2026-09-30&currencyCode=EUR&los=5) |
+| Kyoto | HOTEL AMANEK Kyoto Kawaramachi Gojo | Exactly 2 Standard Triple Rooms; 3 single beds per room, 15 m²; offer for 5 adults; elevator | 943.1 € | overené | [otvoriť](https://www.agoda.com/en-gb/hotel-amanek-kyoto-kawaramachi-gojo/hotel/kyoto-jp.html?countryId=3&finalPriceView=2&adults=5&children=0&rooms=2&checkIn=2026-09-30&currencyCode=EUR&los=5) |
+| Osaka | Namba Oriental Hotel | Search lead for 2 rooms / 5 adults; exact room names not captured | 852 € | lead – overiť detail | [otvoriť](https://www.agoda.com/en-gb/search?city=9590&checkIn=2026-10-05&checkOut=2026-10-08&rooms=2&adults=5&children=0&currency=EUR) |
+| Osaka | APA HOTEL & RESORT OSAKA NAMBA EKIMAE TOWER | Search lead for 2 rooms / 5 adults; exact room names not captured | 948 € | lead – overiť detail | [otvoriť](https://www.agoda.com/en-gb/search?city=9590&checkIn=2026-10-05&checkOut=2026-10-08&rooms=2&adults=5&children=0&currency=EUR) |
+| Osaka | MIMARU Osaka Shinsaibashi East | Search lead for 2 rooms / 5 adults; exact room names not captured | 1800 € | lead – overiť detail | [otvoriť](https://www.agoda.com/en-gb/search?city=9590&checkIn=2026-10-05&checkOut=2026-10-08&rooms=2&adults=5&children=0&currency=EUR) |
 
 ## Presuny
 

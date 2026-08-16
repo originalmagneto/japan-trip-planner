@@ -236,6 +236,71 @@
       "arrival_city": "Tokyo",
       "departure_city": "Tokyo",
       "route_effect": "jediný prestup, ale dlhý pobyt v Singapure a low-cost podmienky"
+    },
+    {
+      "id": "f13",
+      "label": "Trip.com: Air China + Asiana cez Peking a Soul",
+      "origin": "VIE",
+      "arrival": "KIX",
+      "departure_date": "2026-09-26",
+      "return_date": "2026-10-13",
+      "stops": "PEK + GMP→ICN tam; ICN + PKX→PEK späť",
+      "airlines": "Air China + Asiana",
+      "price_total_eur": 3839,
+      "verified": true,
+      "price_note": "Downstream Trip.com checkout: 768 €/person displayed, 3,839 € total. Multi-ticket package with self-transfers and airport changes; cabin bag and 1×23 kg checked bag shown.",
+      "segments": [
+        "26 Sep CA842 VIE T3 13:30 → 27 Sep PEK T3 04:50; 5:05 connection",
+        "27 Sep CA137 PEK 09:55 → GMP 13:05; self-transfer GMP→ICN 7:35; OZ118 ICN T2 20:40 → KIX T1 22:30",
+        "13 Oct OZ117 KIX T1 00:15 → ICN T2 02:15; self-transfer 13:15; CA132 ICN T1 15:30 → PKX 16:40",
+        "Airport change PKX→PEK 10:15; 14 Oct CA841 PEK T3 02:55 → VIE T3 06:50"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-OSA/2026-09-26/2026-10-13/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Osaka",
+      "departure_city": "Osaka",
+      "route_effect": "najnižší plne rozbalený China/Korea lead, ale vysoké riziko multi-ticket a dvoch zmien letiska"
+    },
+    {
+      "id": "f14",
+      "label": "Air China cez Peking — najlepší normálny Air China lead",
+      "origin": "VIE",
+      "arrival": "HND",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-10-10",
+      "stops": "1 stop via PEK each way",
+      "airlines": "Air China",
+      "price_total_eur": 4589,
+      "verified": true,
+      "price_note": "KAYAK result: 918 €/person displayed, 4,589 € total. Ordinary Air China round trip, no self-transfer warning; one cabin bag and two checked bags marked included.",
+      "segments": [
+        "25 Sep VIE 13:30 → 26 Sep HND 12:25; PEK 3:15; total 15:55",
+        "10 Oct HND 21:10 → 11 Oct VIE 06:50; PEK 2:50; total 16:40"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-TYO/2026-09-25/2026-10-10/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "najlepší pomer cena/riziko z aktuálne rozbalených Air China variantov"
+    },
+    {
+      "id": "f15",
+      "label": "Korean Air cez Soul — provider quote",
+      "origin": "VIE",
+      "arrival": "KIX",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-10-14",
+      "stops": "1 stop via ICN each way",
+      "airlines": "Korean Air",
+      "price_total_eur": 4777.99,
+      "verified": true,
+      "price_note": "Downstream Gotogate quote: 955.60 €/person, 4,777.99 € total. Economy Saver; no self-transfer; one cabin bag and one checked bag marked included.",
+      "segments": [
+        "25 Sep KE938 VIE 18:30 → ICN; KE725 ICN → 26 Sep KIX 17:05; ICN 2:35; total 15:35",
+        "14 Oct KE738 KIX 02:15 → ICN; KE937 ICN → VIE 16:20; ICN 6:35; total 21:05"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-OSA/2026-09-25/2026-10-14/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Osaka",
+      "departure_city": "Osaka",
+      "route_effect": "najčistejší Soul variant; vhodnejší pre rodičov než multi-ticket kombinácie"
     }
   ],
   "locations": [

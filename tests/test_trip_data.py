@@ -2,7 +2,7 @@ import json
 import unittest
 from pathlib import Path
 
-from src.build_configurator import markdown
+from src.build_configurator import markdown, load_data
 
 
 class TripDataTests(unittest.TestCase):
@@ -24,10 +24,17 @@ class TripDataTests(unittest.TestCase):
             self.assertTrue(location['map_url'].startswith('http'))
 
     def test_markdown_contains_transfer_purchase_links(self):
-        output = markdown(self.data)
+        output = markdown(load_data())
         self.assertIn('## Presuny', output)
         self.assertIn('kúpiť/info', output)
         self.assertIn('Fushimi Inari', output)
+
+    def test_accommodation_data_has_verified_tokyo_and_exact_two_room_kyoto_options(self):
+        data = load_data()
+        verified_tokyo = [x for x in data['accommodations'] if x['city'] == 'Tokyo' and x['verified']]
+        exact_kyoto = [x for x in data['accommodations'] if x['city'] == 'Kyoto' and x['two_rooms_exact'] and x['verified']]
+        self.assertGreaterEqual(len(verified_tokyo), 4)
+        self.assertGreaterEqual(len(exact_kyoto), 2)
 
 
 if __name__ == '__main__':

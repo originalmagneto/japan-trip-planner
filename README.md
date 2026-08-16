@@ -23,6 +23,7 @@ Komplexný, reprodukovateľný plánovač cesty do Japonska pre 5 osôb.
 - `data/raw/flight-observations.csv` — ručne alebo skriptom uložené cenové pozorovania
 - `data/schema.md` — pravidlá pre zadávanie cien
 - `data/trip_data.json` — konfigurácia letov, lokácií, POI, aktivít, počasia a presunov
+- `data/accommodation_options.json` — overené Airbnb/Agoda ponuky a označené ubytovacie leady
 - `src/flight_tracker.py` — validácia a vyhodnotenie pozorovaní
 - `src/build_report.py` — vytvorenie markdown reportu
 - `src/build_html.py` — jednoduchý HTML report
