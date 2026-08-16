@@ -26,6 +26,7 @@ jobs:
       - name: Build configurator
         run: |
           python src/build_configurator.py
+          python src/build_optimizer.py
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
