@@ -1,0 +1,12 @@
+{
+  "origins": ["VIE", "BUD"],
+  "destinations": ["TYO", "OSA"],
+  "outbound_window": ["2026-09-22", "2026-09-28"],
+  "return_window": ["2026-10-10", "2026-10-14"],
+  "travellers": 5,
+  "cabin": "economy",
+  "carry_on_only": true,
+  "max_stops": 1,
+  "currency": "EUR",
+  "market": "SK"
+}
