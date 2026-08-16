@@ -194,6 +194,48 @@
       "arrival_city": "Tokyo",
       "departure_city": "Tokyo",
       "route_effect": "lacný, ale veľké riziko pri zmeškaní nadväzného letu"
+    },
+    {
+      "id": "f11",
+      "label": "Korean Air cez Soul → Osaka",
+      "origin": "VIE",
+      "arrival": "KIX",
+      "departure_date": "2026-09-25",
+      "return_date": "2026-10-14",
+      "stops": "1 stop via ICN",
+      "airlines": "Korean Air",
+      "price_total_eur": 5043,
+      "verified": false,
+      "price_note": "Google Flights live result: total 5,043 € for 5 adults. Taxes and required fees included; optional and bag fees may apply. Return segments were not exposed in the captured card.",
+      "segments": [
+        "25 Sep 18:30 VIE → 26 Sep 17:05 KIX; ICN 2:35; total 15:35",
+        "Return 14 Oct: exact segment details require opening the Google Flights result"
+      ],
+      "search_url": "https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20OSA%202026-09-25%20returning%202026-10-14&hl=en&gl=AT&curr=EUR",
+      "arrival_city": "Osaka",
+      "departure_city": "Osaka",
+      "route_effect": "najčistejší Soul variant bez zobrazeného self-transferu; vhodnejší pre rodičov než multi-airline lead"
+    },
+    {
+      "id": "f12",
+      "label": "Scoot cez Singapur → Tokio Haneda",
+      "origin": "VIE",
+      "arrival": "HND",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-14",
+      "stops": "1 stop via SIN",
+      "airlines": "Scoot",
+      "price_total_eur": 5238,
+      "verified": false,
+      "price_note": "Google Flights live result: total 5,238 € for 5 adults. Taxes and required fees included; optional and bag fees may apply. Return segments were not exposed in the captured card.",
+      "segments": [
+        "24 Sep 10:25 VIE → 26 Sep 01:05 HND; SIN 13:10; total 31:40",
+        "Return 14 Oct: exact segment details require opening the Google Flights result"
+      ],
+      "search_url": "https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20TYO%202026-09-24%20returning%202026-10-14&hl=en&gl=AT&curr=EUR",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "jediný prestup, ale dlhý pobyt v Singapure a low-cost podmienky"
     }
   ],
   "locations": [

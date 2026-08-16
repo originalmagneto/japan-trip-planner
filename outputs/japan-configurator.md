@@ -16,6 +16,8 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 | f8 | Air China cez Peking → Haneda, dlhší prestup | VIE → HND | 5980 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
 | f9 | Najlacnejší lead do Osaky cez Soul + Peking | VIE → KIX | 3920 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-OSA/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
 | f10 | Najlacnejší lead do Tokia, self-transfer | VIE → NRT | 4294 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
+| f11 | Korean Air cez Soul → Osaka | VIE → KIX | 5043 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20OSA%202026-09-25%20returning%202026-10-14&hl=en&gl=AT&curr=EUR) |
+| f12 | Scoot cez Singapur → Tokio Haneda | VIE → HND | 5238 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights/search?q=5%20adults%20flights%20from%20VIE%20to%20TYO%202026-09-24%20returning%202026-10-14&hl=en&gl=AT&curr=EUR) |
 
 ### Presné segmenty dostupných leadov
 
@@ -38,6 +40,16 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 - 24 Sep 13:30 VIE → 26 Sep 15:30 NRT; XIY 9:00 + ICN self-transfer 18:15; total 43:00
 - 12 Oct 08:20 NRT → 13 Oct 08:55 VIE; SIN 12:10; total 31:35
 - Stav: KAYAK live result for 5 adults: 859 €/person, total 4,294 €. Outbound via XIY + ICN; return via SIN. Explicitly marked self-transfer.
+
+**Korean Air cez Soul → Osaka — 5043 € spolu**
+- 25 Sep 18:30 VIE → 26 Sep 17:05 KIX; ICN 2:35; total 15:35
+- Return 14 Oct: exact segment details require opening the Google Flights result
+- Stav: Google Flights live result: total 5,043 € for 5 adults. Taxes and required fees included; optional and bag fees may apply. Return segments were not exposed in the captured card.
+
+**Scoot cez Singapur → Tokio Haneda — 5238 € spolu**
+- 24 Sep 10:25 VIE → 26 Sep 01:05 HND; SIN 13:10; total 31:40
+- Return 14 Oct: exact segment details require opening the Google Flights result
+- Stav: Google Flights live result: total 5,238 € for 5 adults. Taxes and required fees included; optional and bag fees may apply. Return segments were not exposed in the captured card.
 
 
 ## Lokácie a POI
