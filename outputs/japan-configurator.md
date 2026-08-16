@@ -12,6 +12,33 @@ Pracovné termíny: 2026-09-24 – 2026-10-12
 | f4 | Viedeň → Tokio / Osaka, open-jaw | VIE → TYO | neoverené | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en) |
 | f5 | Viedeň → Haneda, Scoot cez Singapur | VIE → HND | 6538 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-10) |
 | f6 | Viedeň → Narita, Scoot cez Singapur | VIE → NRT | 6955 € | čaká na live overenie | [otvoriť](https://www.google.com/travel/flights?hl=en#flt=VIE.TYO.2026-09-24*TYO.VIE.2026-10-10) |
+| f7 | Air China cez Peking → Haneda | VIE → HND | 5609 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
+| f8 | Air China cez Peking → Haneda, dlhší prestup | VIE → HND | 5980 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
+| f9 | Najlacnejší lead do Osaky cez Soul + Peking | VIE → KIX | 3920 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-OSA/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
+| f10 | Najlacnejší lead do Tokia, self-transfer | VIE → NRT | 4294 € | čaká na live overenie | [otvoriť](https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR) |
+
+### Presné segmenty dostupných leadov
+
+**Air China cez Peking → Haneda — 5609 € spolu**
+- 24 Sep 13:30 VIE → 25 Sep 17:30 HND; PEK 8:00; total 21:00
+- 12 Oct 21:10 HND → 13 Oct 06:50 VIE; PEK 2:50; total 16:40
+- Stav: KAYAK live result for 5 adults: 1,122 €/person, total 5,609 €. Exact segments shown; baggage allowance still needs checkout verification.
+
+**Air China cez Peking → Haneda, dlhší prestup — 5980 € spolu**
+- 24 Sep 13:30 VIE → 25 Sep 12:25 HND; PEK 3:15; total 15:55
+- 12 Oct 21:10 HND → 13 Oct 06:50 VIE; PEK 2:50; total 16:40
+- Stav: KAYAK live result for 5 adults: 1,196 €/person, total 5,980 €. Exact segments shown; baggage allowance still needs checkout verification.
+
+**Najlacnejší lead do Osaky cez Soul + Peking — 3920 € spolu**
+- 24 Sep 13:30 VIE → 25 Sep 20:55 KIX; XIY 1:40 + TAO 3:25 + ICN self-transfer 3:30; total 24:25
+- 12 Oct 11:10 KIX → 13 Oct 06:50 VIE; ICN self-transfer 2:30 + PKX 10:15; total 26:40
+- Stav: KAYAK live result for 5 adults: 784 €/person, total 3,920 €. Outbound via XIY/TAO/ICN; return via ICN/PKX. Explicitly marked self-transfer; baggage and ticket protection must be checked.
+
+**Najlacnejší lead do Tokia, self-transfer — 4294 € spolu**
+- 24 Sep 13:30 VIE → 26 Sep 15:30 NRT; XIY 9:00 + ICN self-transfer 18:15; total 43:00
+- 12 Oct 08:20 NRT → 13 Oct 08:55 VIE; SIN 12:10; total 31:35
+- Stav: KAYAK live result for 5 adults: 859 €/person, total 4,294 €. Outbound via XIY + ICN; return via SIN. Explicitly marked self-transfer.
+
 
 ## Lokácie a POI
 

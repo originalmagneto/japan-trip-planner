@@ -110,6 +110,90 @@
       "arrival_city": "Tokyo",
       "departure_city": "Tokyo",
       "route_effect": "drahšia alternatíva; NRT vyžaduje dlhší transfer do mesta"
+    },
+    {
+      "id": "f7",
+      "label": "Air China cez Peking → Haneda",
+      "origin": "VIE",
+      "arrival": "HND",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1 stop via PEK",
+      "airlines": "Air China",
+      "price_total_eur": 5609,
+      "verified": false,
+      "price_note": "KAYAK live result for 5 adults: 1,122 €/person, total 5,609 €. Exact segments shown; baggage allowance still needs checkout verification.",
+      "segments": [
+        "24 Sep 13:30 VIE → 25 Sep 17:30 HND; PEK 8:00; total 21:00",
+        "12 Oct 21:10 HND → 13 Oct 06:50 VIE; PEK 2:50; total 16:40"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "Air China cez Peking; bez self-transferu podľa zobrazenej karty"
+    },
+    {
+      "id": "f8",
+      "label": "Air China cez Peking → Haneda, dlhší prestup",
+      "origin": "VIE",
+      "arrival": "HND",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "1 stop via PEK",
+      "airlines": "Air China",
+      "price_total_eur": 5980,
+      "verified": false,
+      "price_note": "KAYAK live result for 5 adults: 1,196 €/person, total 5,980 €. Exact segments shown; baggage allowance still needs checkout verification.",
+      "segments": [
+        "24 Sep 13:30 VIE → 25 Sep 12:25 HND; PEK 3:15; total 15:55",
+        "12 Oct 21:10 HND → 13 Oct 06:50 VIE; PEK 2:50; total 16:40"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "Air China cez Peking; alternatíva s iným prestupovým časom"
+    },
+    {
+      "id": "f9",
+      "label": "Najlacnejší lead do Osaky cez Soul + Peking",
+      "origin": "VIE",
+      "arrival": "KIX",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "3 tam / 2 späť; self-transfer",
+      "airlines": "Viac aeroliniek",
+      "price_total_eur": 3920,
+      "verified": false,
+      "price_note": "KAYAK live result for 5 adults: 784 €/person, total 3,920 €. Outbound via XIY/TAO/ICN; return via ICN/PKX. Explicitly marked self-transfer; baggage and ticket protection must be checked.",
+      "segments": [
+        "24 Sep 13:30 VIE → 25 Sep 20:55 KIX; XIY 1:40 + TAO 3:25 + ICN self-transfer 3:30; total 24:25",
+        "12 Oct 11:10 KIX → 13 Oct 06:50 VIE; ICN self-transfer 2:30 + PKX 10:15; total 26:40"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-OSA/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Osaka",
+      "departure_city": "Osaka",
+      "route_effect": "extrémne lacný, ale nevhodný ako prvá voľba pre rodičov kvôli self-transferu a dlhým prestupom"
+    },
+    {
+      "id": "f10",
+      "label": "Najlacnejší lead do Tokia, self-transfer",
+      "origin": "VIE",
+      "arrival": "NRT",
+      "departure_date": "2026-09-24",
+      "return_date": "2026-10-12",
+      "stops": "2 tam / 1 späť; self-transfer",
+      "airlines": "Viac aeroliniek",
+      "price_total_eur": 4294,
+      "verified": false,
+      "price_note": "KAYAK live result for 5 adults: 859 €/person, total 4,294 €. Outbound via XIY + ICN; return via SIN. Explicitly marked self-transfer.",
+      "segments": [
+        "24 Sep 13:30 VIE → 26 Sep 15:30 NRT; XIY 9:00 + ICN self-transfer 18:15; total 43:00",
+        "12 Oct 08:20 NRT → 13 Oct 08:55 VIE; SIN 12:10; total 31:35"
+      ],
+      "search_url": "https://www.at.kayak.com/flights/VIE-TYO/2026-09-24/2026-10-12/5adults?sort=bestflight_a&currency=EUR",
+      "arrival_city": "Tokyo",
+      "departure_city": "Tokyo",
+      "route_effect": "lacný, ale veľké riziko pri zmeškaní nadväzného letu"
     }
   ],
   "locations": [
