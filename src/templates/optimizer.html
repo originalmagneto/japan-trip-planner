@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Trip Optimizer</title>
+    <style>
+        {{ css }}
+        
+        /* App-specific styles */
+        .hero {
+            border-bottom: var(--border-width) solid var(--black);
+            padding: var(--space-6) 0;
+            margin-bottom: var(--space-6);
+        }
+        
+        .flight-card {
+            position: relative;
+        }
+        
+        .flight-card .price {
+            font-size: 28px;
+            font-weight: 700;
+            margin: var(--space-2) 0;
+        }
+        
+        .flight-card .price-per-person {
+            font-size: 16px;
+            color: var(--gray-600);
+        }
+        
+        .route-strip {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: var(--space-2);
+            padding: var(--space-4);
+            border: var(--border-width) solid var(--black);
+            background: var(--gray-50);
+            margin: var(--space-4) 0;
+        }
+        
+        .route-city {
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .route-city small {
+            display: block;
+            margin-top: var(--space-1);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .section-header {
+            border-top: var(--border-width) solid var(--black);
+            padding-top: var(--space-6);
+            margin-top: var(--space-6);
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            h2 { font-size: 24px; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container pt-6 pb-8">
+        <!-- Hero -->
+        <div class="hero">
+            <h1>Japan Trip Optimizer</h1>
+            <p class="text-gray">Intelligent flight search, dynamic itinerary generation, and accommodation matching.</p>
+        </div>
+        
+        <!-- Flight Selection -->
+        <section id="flightSection">
+            <h2>Select Your Flight</h2>
+            <p class="mb-4">{{ flights|length }} options found. Click to generate optimized itinerary.</p>
+            
+            <div class="grid grid-2" id="flightList">
+                {% for flight in flights %}
+                <div class="card cursor-pointer flight-card" 
+                     data-flight-id="{{ flight.id }}"
+                     data-arrival="{{ flight.arrival_airport }}"
+                     data-departure="{{ flight.departure_airport }}"
+                     data-outbound="{{ flight.departure_date }}"
+                     data-return="{{ flight.return_date }}"
+                     data-nights="{{ flight.nights }}"
+                     onclick="selectFlight(this)">
+                    
+                    <div class="flex flex-between mb-2">
+                        <h3 class="mb-0">{{ flight.label }}</h3>
+                        {% if flight.verified %}
+                        <span class="badge badge-accent">Verified</span>
+                        {% else %}
+                        <span class="badge">Lead</span>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="text-mono mb-2">
+                        {{ flight.departure_date }} – {{ flight.return_date }}
+                    </div>
+                    
+                    {% if flight.price_total_eur %}
+                    <div class="price">
+                        € {{ "%.0f"|format(flight.price_total_eur) }}
+                    </div>
+                    <div class="price-per-person">
+                        € {{ "%.0f"|format(flight.price_total_eur / 5) }} per person
+                    </div>
+                    {% else %}
+                    <div class="price text-gray">
+                        Price unavailable
+                    </div>
+                    {% endif %}
+                    
+                    <div class="mt-3">
+                        <small>{{ flight.stops }} • {{ flight.airlines }}</small>
+                    </div>
+                    
+                    {% if flight.route_effect %}
+                    <div class="mt-2">
+                        <small class="text-accent font-semibold">{{ flight.route_effect }}</small>
+                    </div>
+                    {% endif %}
+                    
+                    <a href="{{ flight.search_url }}" target="_blank" class="btn btn-small mt-3" onclick="event.stopPropagation()">
+                        Open Source
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        
+        <!-- Dynamic Route (hidden until flight selected) -->
+        <section id="routeSection" class="hidden section-header">
+            <h2>Your Route</h2>
+            <div class="route-strip" id="routeStrip"></div>
+        </section>
+        
+        <!-- Itinerary Details (hidden until flight selected) -->
+        <section id="itinerarySection" class="hidden section-header">
+            <h2>Itinerary</h2>
+            <div class="grid grid-2" id="itineraryPanel"></div>
+        </section>
+        
+        <!-- Accommodation (hidden until flight selected) -->
+        <section id="accommodationSection" class="hidden section-header">
+            <h2>Accommodation</h2>
+            <div class="grid grid-2" id="accommodationPanel"></div>
+        </section>
+        
+        <!-- Transfers (hidden until flight selected) -->
+        <section id="transfersSection" class="hidden section-header">
+            <h2>Transfers</h2>
+            <div id="transfersTable"></div>
+        </section>
+        
+        <!-- Budget Summary (hidden until flight selected) -->
+        <section id="budgetSection" class="hidden section-header">
+            <h2>Budget Estimate</h2>
+            <div class="card" id="budgetPanel"></div>
+        </section>
+    </div>
+    
+    <script>
+        // Embed trip data
+        const TRIP_DATA = {{ trip_data_json }};
+        
+        let selectedFlight = null;
+        
+        function selectFlight(card) {
+            // Deselect previous
+            document.querySelectorAll('.flight-card').forEach(c => c.classList.remove('selected'));
+            
+            // Select current
+            card.classList.add('selected');
+            
+            // Extract flight data
+            selectedFlight = {
+                id: card.dataset.flightId,
+                arrival: card.dataset.arrival,
+                departure: card.dataset.departure,
+                outbound: card.dataset.outbound,
+                return: card.dataset.return,
+                nights: parseInt(card.dataset.nights),
+                price: parseFloat(card.querySelector('.price').textContent.replace(/[€,]/g, '').trim())
+            };
+            
+            // Generate and display itinerary
+            generateItinerary();
+        }
+        
+        function generateItinerary() {
+            const { arrival, departure, nights } = selectedFlight;
+            
+            // Generate route using same logic as Python
+            const route = buildRoute(arrival, departure);
+            const nightsAlloc = allocateNights(route, nights);
+            
+            // Display route strip
+            displayRouteStrip(route, nightsAlloc);
+            
+            // Display location details
+            displayItinerary(route, nightsAlloc);
+            
+            // Display accommodation
+            displayAccommodation(route);
+            
+            // Display transfers
+            displayTransfers(route);
+            
+            // Display budget
+            displayBudget(route, nightsAlloc);
+            
+            // Show sections
+            ['routeSection', 'itinerarySection', 'accommodationSection', 'transfersSection', 'budgetSection']
+                .forEach(id => document.getElementById(id).classList.remove('hidden'));
+        }
+        
+        function buildRoute(arrival, departure) {
+            const norm = (code) => {
+                const map = { 'TYO': 'Tokyo', 'HND': 'Tokyo', 'NRT': 'Tokyo', 
+                             'OSA': 'Osaka', 'KIX': 'Osaka', 'ITM': 'Osaka' };
+                return map[code] || code;
+            };
+            
+            const a = norm(arrival);
+            const d = norm(departure);
+            
+            if (a === 'Tokyo' && d === 'Tokyo') return ['Tokyo', 'Kanazawa', 'Kyoto', 'Osaka'];
+            if (a === 'Osaka' && d === 'Osaka') return ['Osaka', 'Kyoto', 'Kanazawa', 'Tokyo'];
+            if (a === 'Tokyo' && d === 'Osaka') return ['Tokyo', 'Kanazawa', 'Kyoto', 'Osaka'];
+            if (a === 'Osaka' && d === 'Tokyo') return ['Osaka', 'Kyoto', 'Kanazawa', 'Tokyo'];
+            
+            return ['Tokyo', 'Kyoto', 'Osaka'];
+        }
+        
+        function allocateNights(route, totalNights) {
+            const weights = { Tokyo: 4, Kanazawa: 2, Kyoto: 4, Osaka: 3 };
+            const mins = { Tokyo: 3, Kanazawa: 2, Kyoto: 3, Osaka: 2 };
+            
+            const alloc = {};
+            const totalWeight = route.reduce((sum, city) => sum + weights[city], 0);
+            
+            route.forEach(city => {
+                const ideal = Math.floor((weights[city] / totalWeight) * totalNights);
+                alloc[city] = Math.max(mins[city], ideal);
+            });
+            
+            // Adjust for rounding
+            const allocated = Object.values(alloc).reduce((a, b) => a + b, 0);
+            const diff = totalNights - allocated;
+            if (diff !== 0) alloc[route[0]] += diff;
+            
+            return alloc;
+        }
+        
+        function displayRouteStrip(route, nightsAlloc) {
+            const html = route.map(city => `
+                <div class="route-city">
+                    <div>${city}</div>
+                    <small>${nightsAlloc[city]} nights</small>
+                </div>
+            `).join('');
+            
+            document.getElementById('routeStrip').innerHTML = html;
+        }
+        
+        function displayItinerary(route, nightsAlloc) {
+            const locations = TRIP_DATA.locations.filter(loc => route.includes(loc.name));
+            
+            const html = locations.map(loc => `
+                <div class="card">
+                    <h3>${loc.name}</h3>
+                    <p class="text-gray mb-3">${nightsAlloc[loc.name]} nights • ${loc.stay_area}</p>
+                    
+                    <h4 class="mt-4 mb-2">Must-See</h4>
+                    ${loc.pois.slice(0, 3).map(poi => `
+                        <div class="mb-2">
+                            <div class="font-semibold">${poi.name}</div>
+                            <small class="text-gray">${poi.time_h}h • €${poi.cost_eur}</small>
+                        </div>
+                    `).join('')}
+                </div>
+            `).join('');
+            
+            document.getElementById('itineraryPanel').innerHTML = html;
+        }
+        
+        function displayAccommodation(route) {
+            const stays = TRIP_DATA.accommodations.filter(acc => route.includes(acc.city));
+            
+            const html = stays.map(acc => `
+                <div class="card">
+                    <h4>${acc.name}</h4>
+                    <p class="text-gray mb-2">${acc.city} • ${acc.configuration}</p>
+                    <div class="price mb-2">€ ${acc.total_eur.toFixed(0)}</div>
+                    <small class="text-gray">${acc.dates}</small>
+                    <a href="${acc.url}" target="_blank" class="btn btn-small mt-3">View Listing</a>
+                </div>
+            `).join('');
+            
+            document.getElementById('accommodationPanel').innerHTML = html;
+        }
+        
+        function displayTransfers(route) {
+            const relevant = TRIP_DATA.transfers.filter(t => 
+                route.includes(t.from) && route.includes(t.to)
+            );
+            
+            const html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Mode</th>
+                            <th>Duration</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${relevant.map(t => `
+                            <tr>
+                                <td>${t.from}</td>
+                                <td>${t.to}</td>
+                                <td>${t.mode}</td>
+                                <td>${t.duration}</td>
+                                <td>€${t.cost_eur}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            
+            document.getElementById('transfersTable').innerHTML = html;
+        }
+        
+        function displayBudget(route, nightsAlloc) {
+            const flight = selectedFlight.price;
+            const accommodation = TRIP_DATA.accommodations
+                .filter(acc => route.includes(acc.city))
+                .reduce((sum, acc) => sum + acc.total_eur, 0);
+            
+            const transfers = 200; // Estimate
+            const food = Object.values(nightsAlloc).reduce((a, b) => a + b, 0) * 60;
+            const activities = 500; // Estimate
+            
+            const total = flight + accommodation + transfers + food + activities;
+            const perPerson = total / 5;
+            
+            const html = `
+                <div class="grid grid-2">
+                    <div>
+                        <div class="font-semibold mb-1">Flights</div>
+                        <div class="text-gray">€ ${flight.toFixed(0)}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-1">Accommodation</div>
+                        <div class="text-gray">€ ${accommodation.toFixed(0)}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-1">Transfers</div>
+                        <div class="text-gray">€ ${transfers}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-1">Food</div>
+                        <div class="text-gray">€ ${food.toFixed(0)}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold mb-1">Activities</div>
+                        <div class="text-gray">€ ${activities}</div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 pt-4" style="border-top: 2px solid var(--black);">
+                    <div class="flex flex-between">
+                        <div class="font-bold">Total</div>
+                        <div class="font-bold">€ ${total.toFixed(0)}</div>
+                    </div>
+                    <div class="flex flex-between mt-2">
+                        <div class="text-gray">Per Person</div>
+                        <div class="text-accent font-bold">€ ${perPerson.toFixed(0)}</div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('budgetPanel').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
