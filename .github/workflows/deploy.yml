@@ -28,6 +28,7 @@ jobs:
           python src/build_configurator.py
           python src/build_optimizer.py
           python src/build_visual.py
+          cp outputs/japan-visual.html outputs/index.html
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
