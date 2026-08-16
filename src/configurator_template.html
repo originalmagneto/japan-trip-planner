@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Japan 2026 · Interaktívny konfigurátor cesty</title>
+<style>
+:root{--bg-0:#05070c;--bg-1:#0a0d12;--bg-2:#0f131c;--bg-3:#161d2b;--bg-4:#1e2636;--ink:#e8eef3;--muted:#8a9aa8;--line:#252d3a;--accent:#38bdf8;--warm:#e9a568;--card-shadow:0 24px 60px #00000045}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg-0);color:var(--ink);font:clamp(15px,1.8vw,17px)/1.6 ui-sans-serif,system-ui,sans-serif;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:clamp(900px,88vw,1400px);margin:0 auto;padding:clamp(22px,3vw,48px)}
+header{background:linear-gradient(135deg,var(--bg-2) 0%,var(--bg-3) 100%);border-bottom:1px solid var(--line);padding:clamp(40px,6vw,80px) 0}
+h1{font-size:clamp(2.2rem,5vw,4.5rem);line-height:.95;letter-spacing:-.04em;margin-bottom:clamp(12px,2vw,20px)}
+h2{font-size:clamp(1.6rem,3.5vw,2.8rem);line-height:1.1;letter-spacing:-.03em;margin:clamp(32px,5vw,60px) 0 clamp(16px,2.5vw,24px)}
+h3{font-size:clamp(1.1rem,2.2vw,1.4rem);margin:clamp(18px,3vw,28px) 0 clamp(10px,1.5vw,14px)}
+.eyebrow{color:var(--warm);font-size:clamp(.7rem,1.4vw,.82rem);font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.lead{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:42em;margin-bottom:clamp(24px,4vw,36px)}
+.panel{background:var(--bg-2);border:1px solid var(--line);border-radius:clamp(16px,2.5vw,24px);padding:clamp(20px,3vw,32px);box-shadow:var(--card-shadow)}
+.toolbar{display:flex;gap:clamp(10px,1.5vw,14px);flex-wrap:wrap;align-items:center;margin:clamp(20px,3vw,32px) 0}
+select,.btn{font:inherit;border-radius:999px;padding:clamp(10px,1.5vw,13px) clamp(16px,2.5vw,22px);cursor:pointer;font-weight:700;transition:all .2s}
+select{background:var(--bg-3);border:1px solid var(--line);color:var(--ink)}
+.btn{background:var(--accent);color:var(--bg-0);border:0}
+.btn:hover{background:#22a9e3;transform:translateY(-1px)}
+.btn.secondary{background:var(--bg-3);color:var(--ink);border:1px solid var(--line)}
+.flight-list{display:grid;gap:clamp(14px,2vw,18px);margin:clamp(20px,3vw,32px) 0}
+.flight-card{background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:clamp(12px,2vw,18px);padding:clamp(18px,2.5vw,24px);cursor:pointer;transition:all .2s}
+.flight-card:hover,.flight-card.selected{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent)33,var(--card-shadow)}
+.flight-card.selected{background:var(--bg-3)}
+.flight-header{display:flex;justify-content:space-between;align-items:start;gap:clamp(16px,2.5vw,24px);margin-bottom:clamp(12px,2vw,16px)}
+.flight-route{font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:700;letter-spacing:-.02em}
+.flight-price{text-align:right}
+.price-total{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;letter-spacing:-.04em;color:var(--accent)}
+.price-per{font-size:clamp(.85rem,1.5vw,1rem);color:var(--muted)}
+.flight-meta{display:flex;gap:clamp(12px,2vw,18px);flex-wrap:wrap;color:var(--muted);font-size:clamp(.9rem,1.6vw,1.05rem);margin-bottom:clamp(10px,1.5vw,14px)}
+.flight-meta span{display:flex;align-items:center;gap:6px}
+.badge{background:var(--bg-4);color:var(--ink);padding:4px 10px;border-radius:6px;font-size:clamp(.75rem,1.4vw,.88rem);font-weight:600}
+.badge.verified{background:#16a34a22;color:#4ade80;border:1px solid #16a34a44}
+.badge.unverified{background:#ea580c22;color:#fb923c;border:1px solid #ea580c44}
+.segments{background:var(--bg-1);border-radius:10px;padding:clamp(12px,2vw,16px);margin-top:clamp(10px,1.5vw,14px);font-size:clamp(.88rem,1.5vw,1rem)}
+.segments div{padding:6px 0;border-bottom:1px solid var(--line)}
+.segments div:last-child{border:0}
+.cascade{display:grid;gap:clamp(24px,4vw,40px);margin:clamp(32px,5vw,60px) 0}
+.route-strip{display:flex;gap:0;overflow-x:auto;margin:clamp(16px,2.5vw,24px) 0;padding:clamp(8px,1.5vw,12px) 0}
+.route-stop{min-width:clamp(140px,18vw,180px);background:var(--bg-3);border:1px solid var(--line);padding:clamp(14px,2vw,18px);position:relative}
+.route-stop:first-child{border-radius:clamp(12px,2vw,16px) 0 0 clamp(12px,2vw,16px)}
+.route-stop:last-child{border-radius:0 clamp(12px,2vw,16px) clamp(12px,2vw,16px) 0}
+.route-stop:not(:last-child):after{content:'→';position:absolute;right:-14px;top:50%;transform:translateY(-50%);z-index:2;background:var(--warm);color:var(--bg-0);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:800}
+.route-stop strong{display:block;font-size:clamp(1.05rem,2vw,1.25rem);margin-bottom:4px}
+.route-stop small{color:var(--muted);font-size:clamp(.82rem,1.5vw,.95rem)}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(clamp(260px,28vw,320px),1fr));gap:clamp(16px,2.5vw,22px);margin:clamp(20px,3vw,32px) 0}
+.info-card{background:var(--bg-2);border:1px solid var(--line);border-radius:clamp(12px,2vw,18px);padding:clamp(18px,2.5vw,24px)}
+.info-card h4{font-size:clamp(1.05rem,2vw,1.2rem);margin-bottom:clamp(8px,1.5vw,12px)}
+.info-card p{color:var(--muted);margin:clamp(6px,1vw,10px) 0}
+.poi-list{display:grid;gap:clamp(10px,1.5vw,14px);margin:clamp(14px,2vw,18px) 0}
+.poi{background:var(--bg-1);border:1px solid var(--line);border-radius:10px;padding:clamp(12px,2vw,16px);display:grid;grid-template-columns:1fr auto;gap:clamp(12px,2vw,16px);align-items:center}
+.poi strong{display:block;margin-bottom:4px}
+.poi small{color:var(--muted);font-size:clamp(.85rem,1.5vw,.95rem)}
+.poi-links{display:flex;gap:8px;font-size:clamp(.82rem,1.5vw,.92rem)}
+.transfer-table{margin:clamp(20px,3vw,32px) 0}
+.transfer-row{display:grid;grid-template-columns:1.2fr 1.2fr 2fr 1fr 1fr auto;gap:clamp(10px,1.8vw,16px);align-items:center;padding:clamp(12px,2vw,16px);border-bottom:1px solid var(--line)}
+.transfer-row:first-child{background:var(--bg-3);font-weight:700;border-radius:clamp(10px,1.8vw,14px) clamp(10px,1.8vw,14px) 0 0}
+.stay-list{display:grid;gap:clamp(16px,2.5vw,22px);margin:clamp(20px,3vw,32px) 0}
+.stay-card{background:var(--bg-2);border:1px solid var(--line);border-radius:clamp(12px,2vw,18px);padding:clamp(18px,2.5vw,24px)}
+.stay-header{display:flex;justify-content:space-between;align-items:start;gap:clamp(16px,2.5vw,24px);margin-bottom:clamp(12px,2vw,16px)}
+.stay-price{font-size:clamp(1.4rem,2.8vw,2rem);font-weight:800;color:var(--warm)}
+.stay-meta{color:var(--muted);font-size:clamp(.9rem,1.6vw,1.05rem);margin:clamp(8px,1.5vw,12px) 0}
+.budget-summary{background:var(--bg-3);border:2px solid var(--accent);border-radius:clamp(14px,2.5vw,20px);padding:clamp(24px,4vw,36px);margin:clamp(24px,4vw,36px) 0;text-align:center}
+.budget-total{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--accent);letter-spacing:-.04em;margin:clamp(12px,2vw,18px) 0}
+.budget-breakdown{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:clamp(12px,2vw,18px);margin-top:clamp(20px,3vw,28px);text-align:left}
+.budget-item{background:var(--bg-2);border-radius:10px;padding:clamp(14px,2vw,18px)}
+.budget-item strong{display:block;font-size:clamp(1.2rem,2.2vw,1.5rem);color:var(--accent);margin-bottom:4px}
+@media(max-width:800px){.transfer-row{grid-template-columns:1fr 1fr;font-size:.9rem}.transfer-row>span:nth-child(n+3){grid-column:span 2}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="eyebrow">Japan · konfigurátor cesty 2026</div>
+<h1>Vyber let.<br>Postav itinerár.</h1>
+<p class="lead">Interaktívny plánovač pre 5 ľudí: porovnaj lety, pozri navrhnutú trasu, ubytovanie, program, presuny a rozpočet. Všetko sa prepočítava podľa vybraného letu.</p>
+</div>
+</header>
+
+<main>
+<div class="wrap">
+<section id="flightSection">
+<h2>1. Vyber letenku</h2>
+<div class="toolbar">
+<label>Zoradiť: <select id="flightSort">
+<option value="price">Najlacnejšie</option>
+<option value="time">Najkratšie</option>
+<option value="verified">Overené najskôr</option>
+</select></label>
+<button class="btn secondary" id="showAllFlights">Zobraziť všetky varianty</button>
+</div>
+<div id="flightList" class="flight-list"></div>
+</section>
+
+<div id="cascadeContent" class="cascade"></div>
+
+</div>
+</main>
+
+<script>
+const DATA=__TRIP_DATA__;
+let state={selectedFlightId:null,routeLocationIds:[],showAllFlights:false};
+
+const money=v=>v==null?'neoverené':v.toLocaleString('sk-SK',{minimumFractionDigits:0,maximumFractionDigits:0})+' €';
+const perPerson=(total,party)=>total==null?null:Math.round(total/party);
+
+function selectFlight(flightId){state.selectedFlightId=flightId;const flight=DATA.flight_options.find(f=>f.id===flightId);if(!flight)return;const arrCity=flight.arrival_city||'Tokyo';const depCity=flight.departure_city||arrCity;state.routeLocationIds=buildRoute(arrCity,depCity);render()}
+
+function buildRoute(arrivalCity,departureCity){const map={'Tokyo':'tokyo','Osaka':'osaka',Kyoto:'kyoto',Kanazawa:'kanazawa',Okinawa:'okinawa'};const arr=map[arrivalCity];const dep=map[departureCity];if(arr===dep)return['tokyo','kanazawa','kyoto','osaka'];if(arr==='osaka'&&dep==='osaka')return['osaka','kyoto','kanazawa','tokyo'];if(arr==='tokyo'&&dep==='osaka')return['tokyo','kanazawa','kyoto','osaka'];if(arr==='osaka'&&dep==='tokyo')return['osaka','kyoto','kanazawa','tokyo'];return['tokyo','kyoto','osaka']}
+
+function sortFlights(flights,criterion){const copy=[...flights];if(criterion==='price')copy.sort((a,b)=>(a.price_total_eur??999999)-(b.price_total_eur??999999));if(criterion==='time'){copy.sort((a,b)=>{const aStops=parseInt(a.stops)||99;const bStops=parseInt(b.stops)||99;return aStops-bStops})}if(criterion==='verified')copy.sort((a,b)=>(b.verified?1:0)-(a.verified?1:0));return copy}
+
+function renderFlights(){const sort=document.getElementById('flightSort').value;const list=state.showAllFlights?DATA.flight_options:DATA.flight_options.slice(0,5);const sorted=sortFlights(list,sort);document.getElementById('flightList').innerHTML=sorted.map(f=>{const total=f.price_total_eur;const pp=perPerson(total,DATA.trip.travellers);const selected=f.id===state.selectedFlightId?'selected':'';const verifiedBadge=f.verified?'<span class="badge verified">Overené</span>':'<span class="badge unverified">Checkout overiť</span>';const segments=f.segments?`<div class="segments">${f.segments.map(s=>`<div>${s}</div>`).join('')}</div>`:'';return`<article class="flight-card ${selected}" onclick="selectFlight('${f.id}')"><div class="flight-header"><div><div class="eyebrow">${f.origin} → ${f.arrival}</div><div class="flight-route">${f.label}</div></div><div class="flight-price"><div class="price-total">${money(total)}</div><div class="price-per">${money(pp)} / osoba</div></div></div><div class="flight-meta"><span>📅 ${f.departure_date} – ${f.return_date}</span><span>✈️ ${f.stops}</span><span>🏢 ${f.airlines}</span></div><div>${verifiedBadge}</div><p style="color:var(--muted);margin:10px 0">${f.route_effect}</p>${segments}<p style="margin-top:12px"><a href="${f.search_url}" target="_blank" class="btn secondary" style="display:inline-block;padding:8px 14px;font-size:.9rem">Otvoriť zdroj ↗</a></p></article>`}).join('')}
+
+function renderItinerary(){if(!state.selectedFlightId)return'';const flight=DATA.flight_options.find(f=>f.id===state.selectedFlightId);const locs=state.routeLocationIds.map(id=>DATA.locations.find(l=>l.id===id)).filter(Boolean);const nights=locs.reduce((s,l)=>s+l.nights,0);const transfers=locs.length-1;const arrCity=flight.arrival_city||'Tokyo';const depCity=flight.departure_city||arrCity;const routeStops=locs.map(l=>`<div class="route-stop"><strong>${l.name}</strong><small>${l.nights} ${l.nights===1?'noc':'noci'}<br>${l.stay_area}</small></div>`).join('');const mapUrl='https://www.google.com/maps/dir/'+locs.map(l=>encodeURIComponent(l.name)).join('/');return`<section><h2>2. Navrhovaná trasa</h2><div class="panel"><p style="color:var(--muted);margin-bottom:20px">Prílet: <strong>${arrCity}</strong> · Odlet: <strong>${depCity}</strong> · Spolu: <strong>${nights} nocí</strong>, <strong>${transfers} ${transfers===1?'presun':'presuny'}</strong></p><div class="route-strip">${routeStops}</div><p style="margin-top:18px"><a href="${mapUrl}" target="_blank" class="btn">Otvoriť trasu v Google Maps ↗</a></p></div>${renderLocationDetails(locs)}</section>`}
+
+function renderLocationDetails(locs){return locs.map(loc=>`<div class="info-card"><div class="eyebrow">${loc.nights} ${loc.nights===1?'noc':'noci'}</div><h3>${loc.name}</h3><p>${loc.best_for.join(' · ')}</p><p><strong>Historický klimatický kontext:</strong> ${loc.weather.temperature_c} °C, ${loc.weather.rain}. ${loc.weather.note}</p><div class="poi-list">${loc.pois.map(poi=>`<div class="poi"><div><strong>${poi.name}</strong><small>${poi.type} · ${poi.time_h} h · ${poi.cost_eur} €<br>💡 ${poi.tip}</small></div><div class="poi-links"><a href="${poi.map}" target="_blank">Mapa</a><a href="${poi.link}" target="_blank">Info</a></div></div>`).join('')}</div><h4 style="margin-top:18px">Voliteľné aktivity</h4><div class="poi-list">${loc.activities.map(act=>`<div class="poi"><div><strong>${act.name}</strong><small>${act.hours} h · cca ${act.cost_eur} €/os.</small></div><div class="poi-links"><a href="${act.link}" target="_blank">Info</a></div></div>`).join('')}</div></div>`).join('')}
+
+function renderStays(){if(!state.selectedFlightId)return'';const flight=DATA.flight_options.find(f=>f.id===state.selectedFlightId);const locs=state.routeLocationIds.map(id=>DATA.locations.find(l=>l.id===id)).filter(Boolean);const cityNames=locs.map(l=>l.name);const stays=(DATA.accommodations||[]).filter(s=>{const normalized=s.city==='Kyoto'?'Kjóto':s.city==='Tokyo'?'Tokio':s.city;return cityNames.includes(normalized)});if(stays.length===0)return'<section><h2>3. Ubytovanie</h2><p style="color:var(--muted)">Pre túto trasu zatiaľ nie sú uložené overené ponuky. Vyhľadávacie odkazy nájdeš v <a href="../docs/accommodation.md">docs/accommodation.md</a>.</p></section>';return`<section><h2>3. Ubytovanie</h2><div class="stay-list">${stays.map(s=>`<article class="stay-card"><div class="stay-header"><div><div class="eyebrow">${s.city} · ${s.source}</div><h3>${s.name}</h3></div><div class="stay-price">${money(s.total_eur)}</div></div><p>${s.configuration}</p><div class="stay-meta">📍 ${s.area_station}</div><div style="display:flex;gap:8px;margin:12px 0">${s.two_rooms_exact?'<span class="badge">Presne 2 izby</span>':'<span class="badge">1 apartmán/suita</span>'}${s.verified?'<span class="badge verified">Overené</span>':'<span class="badge unverified">Lead – overiť</span>'}</div><p style="font-size:.92rem;color:var(--muted)"><strong>Storno:</strong> ${s.cancellation}</p><p style="font-size:.92rem;color:var(--muted);margin-top:6px"><strong>Dane:</strong> ${s.taxes}</p><p style="margin-top:14px"><a href="${s.url}" target="_blank" class="btn secondary" style="display:inline-block;padding:8px 14px;font-size:.9rem">Otvoriť ponuku ↗</a></p></article>`).join('')}</div></section>`}
+
+function renderTransfers(){if(!state.selectedFlightId)return'';const locs=state.routeLocationIds.map(id=>DATA.locations.find(l=>l.id===id)).filter(Boolean);const citySet=new Set(locs.map(l=>l.name));const transfers=DATA.transfers.filter(t=>citySet.has(t.from)||citySet.has(t.to)||t.from==='Japan');return`<section><h2>4. Presuny</h2><div class="panel"><div class="transfer-table"><div class="transfer-row"><span>Odkiaľ</span><span>Kam</span><span>Spôsob</span><span>Čas</span><span>Cena</span><span>Odkaz</span></div>${transfers.map(t=>`<div class="transfer-row"><span><strong>${t.from}</strong></span><span><strong>${t.to}</strong></span><span>${t.mode}</span><span>${t.duration}</span><span>${t.cost_eur} €</span><span><a href="${t.buy}" target="_blank">Kúpiť ↗</a></span></div>`).join('')}</div></div></section>`}
+
+function renderBudget(){if(!state.selectedFlightId)return'';const flight=DATA.flight_options.find(f=>f.id===state.selectedFlightId);const flightTotal=flight.price_total_eur;const flightPP=perPerson(flightTotal,DATA.trip.travellers);const locs=state.routeLocationIds.map(id=>DATA.locations.find(l=>l.id===id)).filter(Boolean);const nights=locs.reduce((s,l)=>s+l.nights,0);const stays=(DATA.accommodations||[]).filter(s=>{const normalized=s.city==='Kyoto'?'Kjóto':s.city==='Tokyo'?'Tokio':s.city;return locs.map(l=>l.name).includes(normalized)});const stayTotal=stays.reduce((s,st)=>s+st.total_eur,0);const stayPP=perPerson(stayTotal,DATA.trip.travellers);const transportEst=280;const foodEst=nights*20;const entriesEst=120;const total=flightPP+stayPP+transportEst+foodEst+entriesEst;return`<section id="budgetPanel"><h2>5. Orientačný rozpočet</h2><div class="budget-summary"><div class="eyebrow">Odhad na osobu</div><div class="budget-total">${money(total)}</div><p style="color:var(--muted)">Pre ${DATA.trip.travellers} osôb · ${nights} nocí</p><div class="budget-breakdown"><div class="budget-item"><strong>${money(flightPP)}</strong><span style="color:var(--muted)">Letenka</span></div><div class="budget-item"><strong>${money(stayPP)}</strong><span style="color:var(--muted)">Ubytovanie</span></div><div class="budget-item"><strong>${money(transportEst)}</strong><span style="color:var(--muted)">Doprava (odhad)</span></div><div class="budget-item"><strong>${money(foodEst)}</strong><span style="color:var(--muted)">Jedlo (odhad)</span></div><div class="budget-item"><strong>${money(entriesEst)}</strong><span style="color:var(--muted)">Vstupy, poistenie</span></div></div></div><p style="color:var(--muted);margin-top:20px;text-align:center">Doprava a jedlo sú plánovacie odhady; overené ponuky sú len lety a ubytovanie.</p></section>`}
+
+function render(){renderFlights();const cascade=document.getElementById('cascadeContent');if(!state.selectedFlightId){cascade.innerHTML='<p style="color:var(--muted);text-align:center;margin:60px 0">Vyber letenku a uvidíš navrhovanú trasu, ubytovanie, presuny a rozpočet.</p>';return}cascade.innerHTML=`${renderItinerary()}<div class="info-grid" id="locationDetails"></div>${renderStays()}${renderTransfers()}${renderBudget()}`}
+
+document.getElementById('flightSort').addEventListener('change',renderFlights);
+document.getElementById('showAllFlights').addEventListener('click',()=>{state.showAllFlights=!state.showAllFlights;document.getElementById('showAllFlights').textContent=state.showAllFlights?'Zobraziť menej':'Zobraziť všetky varianty';renderFlights()});
+
+render();
+</script>
+</body>
+</html>
