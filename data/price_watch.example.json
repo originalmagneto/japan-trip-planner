@@ -1,0 +1,16 @@
+[
+  {
+    "flight_id": "f1",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=...",
+    "target_price_eur": 5000,
+    "last_price_eur": 5500,
+    "last_checked": "2026-08-16T08:00:00Z"
+  },
+  {
+    "flight_id": "f14",
+    "search_url": "https://www.google.com/travel/flights/search?tfs=...",
+    "target_price_eur": 4500,
+    "last_price_eur": null,
+    "last_checked": null
+  }
+]
