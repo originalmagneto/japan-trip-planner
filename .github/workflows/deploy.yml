@@ -23,10 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install reportlab pillow jinja2
       
-      - name: Build configurator
+      - name: Build all outputs
         run: |
           python src/build_configurator.py
           python src/build_optimizer.py
+          python src/build_visual.py
       
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
